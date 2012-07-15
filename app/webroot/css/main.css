@@ -1,0 +1,305 @@
+/**
+ * Styling for Cakephp Jobs
+ * Author: Andrew Perkins
+ */
+ 
+body {
+    font-family: helvetica, "lucida grande", verdana, sans-serif;
+    text-align: center;
+    background-color: #2B270C;
+}
+
+/* 
+H* Headings 
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+    font-weight: bold;
+    color: #A3481B;
+}
+
+h1 {
+    font-size: 160%;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+/* 
+Other general basic tags 
+*/
+
+p {
+    font-size: 85%;
+    margin-bottom: 1.5em;
+}
+
+ul, ol, li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+ul, ol {
+	list-style-type: circle;
+    margin-bottom: 1.5em;
+}
+
+a img {
+    border: none;
+}
+
+hr {
+    margin-bottom: 1.5em;
+}
+
+/*
+ * Forms
+ */
+input, div.textarea, div.select, select, textarea {
+	margin-bottom: 20px;
+	display: block;
+}
+
+input {
+	padding: 3px;
+	border: 1px solid #00A6C7;
+}
+
+label {
+	padding-right: 5px;
+}
+
+legend {
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+/* for the text editors */
+form span {
+	margin-bottom: 20px;
+}
+
+#content form .button {
+	display: inline;
+}
+
+.error-message {
+	color: #A3481B;
+	display: block;
+	margin-top: -15px;
+	margin-bottom: 20px;
+}
+
+#flashMessage {
+	color: #fff;
+	background-color: #A3481B;
+	padding: 5px;
+	border: 1px solid #000;
+	margin-bottom: 15px;
+}
+
+
+/* 
+Links 
+*/
+
+a:link, a:visited {
+    color: #A3481B;
+}
+
+a:active, a:hover {
+    color: #EABE77;
+}
+
+/* 
+Container 
+*/
+
+#container {
+    width: 900px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #EABE77;
+    overflow: hidden;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*
+Header
+*/
+
+#header {
+    background-color: #A3481B;
+    height: 3em;
+    padding: 1em;
+}
+
+#header h1 {
+    margin-bottom: 0;
+    font-size: 250%;
+}
+
+#header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+Nav
+*/
+
+#nav {
+	overflow: hidden;
+	position: relative;
+	height: 50px;
+	line-height: 45px;
+	background-color: #261B05;
+}
+
+#nav ul {
+	list-style-type: none;
+}
+
+#nav ul li {
+	float: right;
+}
+
+#nav a:link, #nav a:visited {
+	color: #EABE77;
+}
+
+#nav a:hover, #nav a:active {
+	color: #A3481B;
+}
+
+/*
+Content
+*/
+
+#content {
+    padding: 1em;
+    width: 660px;
+    background-color: #fff;
+    float: left;
+}
+
+/*
+Table Styling
+*/
+
+table {
+	margin-bottom: 20px;
+}
+#content #jobs tr th, #content #devs tr th {
+	width: 500px;
+	border-bottom: 1px solid #000;
+	font-weight: bold;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+#content td {
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+}
+
+#content .job, #content .dev {
+	margin-bottom: 20px;
+	width: 500px;
+}
+
+/*
+Sidebar
+*/
+
+#sidebar {
+    float: right;
+    width: 180px;
+    padding: .5em;
+    background-color: #fff;
+}
+
+#sidebar #post-job {
+    background-color: #261B05;
+    color: #fff;
+    -moz-border-radius: 5px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+#sidebar .button {
+    border: 1px solid #261B05;
+    background-color: #333;
+    color: #fff;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    font-size: 85%;
+    text-decoration: none;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+#sidebar a.button {
+    padding: 6px 12px;
+}
+
+/**
+ * 	Progress Menu for Job Wizard
+ */
+#wizard div {
+	margin-bottom: 5px;
+}
+
+#wizard div.incomplete {
+	color: #bbb;
+}
+
+#wizard div.active {
+	font-weight: bold;
+}
+
+
+/*
+Footer 
+*/
+
+#footer {
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    background-color: #A3481B;
+    color: #fff;
+}
+
+/*
+Misc Styling
+ */
+.highlight-odd {
+	background-color: #FFF5EE;
+}
+
+.highlight-even {
+	background-color: #fff;
+}
+
+#skillset {
+	background-color: #eee;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+
