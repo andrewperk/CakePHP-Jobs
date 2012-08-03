@@ -35,8 +35,3 @@ echo $this->Form->submit('Continue', array('div'=>false, 'class'=>'button'));
 echo $this->Form->submit('Cancel', array('div'=>false, 'name'=>'Cancel', 'class'=>'button'));
 echo $this->Form->end();
 ?>
-<?php echo $this->Html->script('jquery-1.7'); ?>
-	<?php echo $this->Html->script('wizard'); ?>
-	<?php echo $this->Html->script('ckeditor/ckeditor'); ?>
-
-

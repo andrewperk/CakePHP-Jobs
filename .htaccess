@@ -1,11 +1,11 @@
 <IfModule mod_rewrite.c>
    RewriteEngine on
    #dev
-   #RewriteRule    ^$ app/webroot/    [L]
-   #RewriteRule    (.*) app/webroot/$1 [L]
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
    #production
-   RewriteRule    ^$ /cakephpjobs/app/webroot/ [L]
-   RewriteRule    (.*) /cakephpjobs/app/webroot/$1 [L]
+   #RewriteRule    ^$ /cakephpjobs/app/webroot/ [L]
+   #RewriteRule    (.*) /cakephpjobs/app/webroot/$1 [L]
 </IfModule>
 #AddType x-mapp-php5 .php
 #php_value display_errors off

@@ -1,4 +1,4 @@
-<h1>Find CakePHP Jobs</h1>
+<h1>Job Listings</h1>
 
 <table id="jobs">
 <tr>
@@ -22,5 +22,3 @@
     </span>
 <?php endforeach; ?>
 </table>
-<?php echo $this->Html->script('jquery-1.7.js'); ?>
-<?php echo $this->Html->script('alternate-table-styling.js'); ?>

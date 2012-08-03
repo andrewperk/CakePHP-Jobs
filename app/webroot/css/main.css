@@ -20,15 +20,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 160%;
+    font-size: 200%;
 }
 
 h2 {
-    font-size: 140%;
+    font-size: 180%;
 }
 
 h3 {
-    font-size: 120%;
+    font-size: 140%;
 }
 
 h4 {
@@ -127,13 +127,11 @@ Container
 
 #container {
     width: 900px;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
+    padding: 0 3px;
     text-align: left;
     background-color: #EABE77;
     overflow: hidden;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
 }
 
 /*
@@ -144,11 +142,24 @@ Header
     background-color: #A3481B;
     height: 3em;
     padding: 1em;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#header span#logo {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
 }
 
 #header h1 {
-    margin-bottom: 0;
-    font-size: 250%;
+    font-size: 280%;
+    font-family: Georgia;
+    text-align: left;
 }
 
 #header h1 a {
@@ -166,6 +177,9 @@ Nav
 	height: 50px;
 	line-height: 45px;
 	background-color: #261B05;
+    margin: 3px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 #nav ul {
@@ -193,6 +207,7 @@ Content
     width: 660px;
     background-color: #fff;
     float: left;
+    margin-bottom: 3px;
 }
 
 /*
@@ -279,10 +294,14 @@ Footer
 
 #footer {
     padding: 1em;
+    margin: 3px 0;
     text-align: center;
     clear: both;
-    background-color: #A3481B;
-    color: #fff;
+    font-size: 12px;
+    background-color: #261B05;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #ccc;
 }
 
 /*

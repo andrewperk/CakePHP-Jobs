@@ -22,5 +22,3 @@
     </span>
 <?php endforeach; ?>
 </table>
-<?php echo $this->Html->script('jquery-1.7.js'); ?>
-<?php echo $this->Html->script('alternate-table-styling.js'); ?>

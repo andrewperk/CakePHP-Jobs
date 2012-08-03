@@ -12,17 +12,20 @@
 		    'reset','main'
 	    ));
 
-		echo $scripts_for_layout;
+		//echo $scripts_for_layout;
 	?>
 	<?php echo $this->Html->script('jquery-1.7'); ?>
-	<?php echo $this->Html->script('wizard'); ?>
 	<?php echo $this->Html->script('ckeditor/ckeditor'); ?>
+	<?php echo $this->Html->script('application'); ?>
+	
 </head>
 <body>
+	<div id="header">
+		<span id="logo">
+		<h1><?php echo $this->Html->link('CakePHP Jobs', array('controller'=>'jobs', 'action'=>'index')); ?></h1>
+		</span>
+	</div>
 	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link('CakePHP Jobs', array('controller'=>'jobs', 'action'=>'index')); ?></h1>
-		</div>
 		<div id="nav">
 			<ul>
 				<?php if (AuthComponent::user()): ?>
@@ -50,9 +53,7 @@
 		    <?php 
 		    // Display the Wizard Progress bar only on Wizard pages.
 		    if ($this->params['controller'] == 'jobs' && $this->action == 'wizard'): ?>
-                <div id="wizard">
-                	<?php  echo $this->Wizard->progressMenu(array('personalinfo'=>'Personal Info', 'jobinfo'=>'Job Info', 'review'=>'Review')); ?>
-                </div>
+                <?php echo $this->element('wizard'); ?>
             <?php 
             // Else display Post a Job Link on all other pages.
             else: ?>

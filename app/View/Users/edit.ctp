@@ -13,8 +13,3 @@ echo $this->Form->input('experience', array('label'=>'Years of Experience'));
 echo $this->Form->input('country');
 echo $this->Form->end('Update Profile');
 ?>
-
-<?php
-echo $this->Html->script('jquery-1.7');
-echo $this->Html->script('ckeditor/ckeditor');
-?>

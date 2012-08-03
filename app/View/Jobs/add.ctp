@@ -39,6 +39,3 @@ echo $this->Form->input('created');
 ?>
 </fieldset>
 <?php echo $this->Form->end('Submit Job'); ?>
-
-<?php echo $this->Html->script('jquery-1.7'); ?>
-<?php echo $this->Html->script('ckeditor/ckeditor'); ?>

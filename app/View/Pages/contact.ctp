@@ -1,4 +1,4 @@
-<h1>CakePHP Jobs Support</h1>
+<h1>Job Listings Support</h1>
 
 <p>CakePHP Jobs support can be reached by email, telephone, and skype. Please use one of the following contact options:</p>
 

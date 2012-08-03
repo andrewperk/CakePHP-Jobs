@@ -23,4 +23,3 @@
     <?php echo $this->Form->end(); ?>
 </div>
 
-<?php echo $this->Html->script('filter-jobs');
