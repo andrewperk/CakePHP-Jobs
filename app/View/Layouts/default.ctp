@@ -64,7 +64,7 @@
             // If on developers pages display login and search developers filters
             if ($this->params['controller'] == 'users'): ?>
             	<?php if (AuthComponent::user()): ?>
-            		<p>You are logged in as <?php echo AuthComponent::user('username'); ?>. </p>
+            		<p>You are logged in as <?php echo h(AuthComponent::user('username')); ?>. </p>
         		<?php else: ?>
 	            	<p>Developers can <?php echo $this->Html->link('create a profile', array('controller'=>'users', 'action'=>'add')); ?> 
 	            		or <?php echo $this->Html->link('Login', array('controller'=>'users', 'action'=>'login')); ?> here</p>

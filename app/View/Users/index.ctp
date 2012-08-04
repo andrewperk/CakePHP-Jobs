@@ -10,13 +10,13 @@
 <?php foreach($users as $user): ?>
 	<span class="dev">
     <tr>
-        <td><?php echo $user['User']['firstname']; ?> <?php echo $user['User']['lastname']; ?></td>
-        <td><?php echo $user['User']['experience']; ?> years</td>
+        <td><?php echo h($user['User']['firstname']); ?> <?php echo h($user['User']['lastname']); ?></td>
+        <td><?php echo h($user['User']['experience']); ?> years</td>
         <td>
-            <?php echo $user['User']['country']; ?> 
+            <?php echo h($user['User']['country']); ?> 
         </td>
         <td>
-        	<?php echo $this->Html->link('View Profile', array('controller'=>'users', 'action'=>'view', $user['User']['id'])); ?>
+        	<?php echo $this->Html->link('View Profile', array('controller'=>'users', 'action'=>'view', h($user['User']['id']))); ?>
         </td>
     </tr>
     </span>

@@ -14,10 +14,10 @@
                     'Contract'=>'Contract',
                     'Internship'=>'Internship'
                     ),
-            'label'=>'by job type')); ?>
-    <?php echo $this->Form->input('joblocation', array('label'=>'by location')); ?>
-    <?php echo $this->Form->input('jobtitle', array('label'=>'by job title')); ?>
-    <?php echo $this->Form->input('companyname', array('label'=>'by company')); ?>
+            'label'=>'by job type', 'class'=>'job-type-filter')); ?>
+    <?php echo $this->Form->input('joblocation', array('label'=>'by location', 'class'=>'job-location-filter')); ?>
+    <?php echo $this->Form->input('jobtitle', array('label'=>'by job title', 'class'=>'job-title-filter')); ?>
+    <?php echo $this->Form->input('companyname', array('label'=>'by company', 'class'=>'job-company-name-filter')); ?>
     <?php echo $this->Form->submit('Filter', array('div'=>false, 'class'=>'button')); ?>
     <?php echo $this->Html->link('Reset', array('controller'=>'jobs', 'action'=>'index'), array('class'=>'button')); ?>
     <?php echo $this->Form->end(); ?>

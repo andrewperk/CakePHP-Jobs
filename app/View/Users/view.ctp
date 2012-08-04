@@ -1,4 +1,6 @@
-<h1>Viewing <?php echo $user['User']['username']; ?>'s Developer Profile</h1>
+<?php App::uses('Sanitize', 'Utility'); ?>
+
+<h1>Viewing <?php echo h($user['User']['username']); ?>'s Developer Profile</h1>
 
 <table id="devs">
 	<tr>
@@ -7,19 +9,19 @@
 	</tr>
 	<tr>
 		<td>Name</td>
-		<td><?php echo $user['User']['firstname']; ?> <?php echo $user['User']['lastname']; ?></td>
+		<td><?php echo h($user['User']['firstname']); ?> <?php echo h($user['User']['lastname']); ?></td>
 	</tr>
 	<tr>
 		<td>Country</td>
-		<td><?php echo $user['User']['country']; ?></td>
+		<td><?php echo h($user['User']['country']); ?></td>
 	</tr>
 	<tr>
 		<td>Experience</td>
-		<td><?php echo $user['User']['experience']; ?> years</td>
+		<td><?php echo h($user['User']['experience']); ?> years</td>
 	</tr>
 	<tr>
 		<td>Contact</td>
-		<td><?php echo $user['User']['email']; ?></td>
+		<td><?php echo h($user['User']['email']); ?></td>
 	</tr>
 </table>
 <p>My skillset:</p>

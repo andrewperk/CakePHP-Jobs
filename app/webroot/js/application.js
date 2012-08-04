@@ -10,27 +10,27 @@ $(document).ready(function() {
 	var jobtitlevalue;
 	
 	// If Job Type select element changes load in the appropriate jobs
-	$('#JobJobtype').change(function(){
-		jobtypevalue = $('#JobJobtype').val();
-		joblocationvalue = $('#JobJoblocation').val();
-		jobcompanynamevalue = $('#JobCompanyname').val();
-		jobtitlevalue = $('#JobJobtitle').val();
+	$('.job-type-filter').change(function(){
+		jobtypevalue = $('.job-type-filter').val();
+		joblocationvalue = $('.job-location-filter').val();
+		jobcompanynamevalue = $('.job-company-name-filter').val();
+		jobtitlevalue = $('.job-title-filter').val();
 		
 		$('#main').load('/projects/cakephpjobs/jobs/index/jobtype:'+jobtypevalue+'/joblocation:'+joblocationvalue+'/jobtitle:'+jobtitlevalue+'/companyname:'+jobcompanynamevalue+' #content');
 	});
 	
 	// An array of search input fields
-	var searchfields = ['JobJoblocation', 'JobJobtitle', 'JobCompanyname'];
+	var searchfields = ['job-location-filter', 'job-title-filter', 'job-company-name-filter'];
 	
 	// Loop through all search input fields
 	// and listen for keypresses to load in 
 	// appropriate jobs
 	for (field in searchfields) {
-		$('#'+searchfields[field]).keypress(function(){
-			jobtypevalue = $('#JobJobtype').val();
-			joblocationvalue = $('#JobJoblocation').val();
-			jobcompanynamevalue = $('#JobCompanyname').val();
-			jobtitlevalue = $('#JobJobtitle').val();
+		$('.'+searchfields[field]).keypress(function(){
+			jobtypevalue = $('.job-type-filter').val();
+			joblocationvalue = $('.job-location-filter').val();
+			jobcompanynamevalue = $('.job-company-name-filter').val();
+			jobtitlevalue = $('.job-title-filter').val();
 			
 			$('#main').load('/projects/cakephpjobs/jobs/index/jobtype:'+jobtypevalue+'/joblocation:'+joblocationvalue+'/jobtitle:'+jobtitlevalue+'/companyname:'+jobcompanynamevalue+' #content');
 		});
@@ -57,11 +57,14 @@ $(document).ready(function() {
 
 
 	// load in post a job with ajax
+	/*
 	$('#sidebar #post-job').live('click', function(event){
 		event.preventDefault();
 		var href = $(this).attr('href');
 		$('#main').load(href+' #content');
 	});
+	*/
+	
 	
 	// progress bar 
 	// when linked is clicked loads in section with ajax
